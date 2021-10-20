@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #160647;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #160647;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+#home{
+
+}
+#home header{
+	padding-top: 30px;
+}
+#home header section.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#home header div.left{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 60%;
+}
+#home header div.left a img{
+
+}
+#home header div.left nav{
+
+}
+#home header div.left nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+#home header div.left nav ul li {
+	margin-right: 30px;
+}
+#home header div.left nav ul li a{
+
+}
+#home header div.left nav ul li a:hover{
+	text-decoration: underline;
+}
+#home header div.right {
+
+}
+#home header div.right a{
+	margin-right: 15px;
+}
+#home header div.right a.button{
+	background:#160647;
+	color: #fff;
+	border-radius: 8px;
+	padding: 10px 15px;
+}	
+#spotlight{
+	margin-top: 10% ;
+	padding: 30px 0;
+}
+#spotlight h1.top{
+	text-align: center;
+	font-weight: 700;
+	font-size: 54px;
+	width: 66%;
+    margin: 0 auto;
+	color: #160647
+}
+#spotlight p{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 10%;
+}
+#spotlight section.wrapper{
+	width: 70%;
+}
+#spotlight div.container{
+}
+#spotlight div.container div.img-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	
+}
+#spotlight div.container div.img-container div.img1{
+	width: 50%;
+	margin-right: 5%;
+}
+#spotlight div.container div.img-container div.img1 img{
+	display: block;
+	width: 100%;
+}
+#spotlight div.container div.img-container div.img2{
+	width: 50%;
+	position: relative;
+    z-index: 0;
+}
+#spotlight div.container div.img-container div.img2 img{
+	display: block;
+	width: 100%;
+}
+#spotlight div.container div.img-container div.img3{
+}
+#spotlight div.container div.img-container div.img3 img{
+	position: absolute;
+	display: block;
+	width: 20%;
+    z-index: -1;
+   top: 70%;
+   right: 0;
+}
+#spotlight div.container div.img-container div.img1 h1.bottom{
+	font-size: 24px;
+	font-weight: 600;
+	text-align: left;
+	margin: 20px 0;
+}
+#spotlight div.container div.img-container div.img1 p{
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	width: 60%;
+}
+#spotlight div.container div.img-container div.img2 h1.bottom{
+	font-size: 24px;
+	font-weight: 600;
+	text-align: left;
+	margin: 20px 0;
+}
+#spotlight div.container div.img-container div.img2 p{
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	width: 90%;
+}
+@media all and (max-width : 1280px){
+	#spotlight div.container div.img-container div.img3 img {
+		position: absolute;
+		display: block;
+		width: 20%;
+		z-index: -1;
+		top: 60%;
+	}
+	#spotlight h1.top {
+		font-size: 39px;
+		width: 66%;
+	}
+	#spotlight p {
+		font-size: 12px;
+	
+	}
+	#spotlight {
+		padding: 0px 0;
+	}
+}
+@media all and (max-width : 980px){
+	#home header div.left nav {
+		display: none;
+	}
+	#spotlight h1.top {
+		font-size: 30px;
+		width: 65%;
+	}
+	#spotlight div.container div.img-container div.img1 p{
+		font-size: 11px;
+		width: 100%;
+	}
+	#spotlight div.container div.img-container div.img2 p{
+		font-size: 11px;
+		width: 100%;
+	}
+	#spotlight div.container div.img-container div.img3 img {
+		top: 51%;
+	}
+	.wrapper {
+		width: 80%;
+}
+@media all and (max-width : 768px){
+	#home header div.left a img {
+		width: 70%;
+	}
+	#home header div.right a.button {
+		padding: 11px 8px;
+		font-size: 12px;
+	}
+	#home header div.right a {
+		margin-right: 15px;
+		font-size: 14px;
+	}
+	#spotlight h1.top {
+		font-size: 25px;
+	}
+	#spotlight {
+		padding: 42px 0;
+	}
+}
+@media all and (max-width : 640px){
+	#spotlight h1.top {
+		font-size: 19px;
+	}
+	#spotlight p {
+		font-size: 6px;
+	}
+	#spotlight div.container div.img-container div.img1 h1.bottom {
+		font-size: 16px;
+	}
+	#spotlight div.container div.img-container div.img1 p {
+		font-size: 7px;
+	}
+	#spotlight div.container div.img-container div.img2 p {
+		font-size: 7px;
+	}
+	#spotlight div.container div.img-container div.img2 h1.bottom {
+		font-size: 16px;
+	}
+	#spotlight div.container div.img-container div.img3 img {
+		top: 42%;
+	}
+}
+@media all and (max-width : 480px){
+	#home header div.left{
+		width: 30%;
+	}
+	#home header div.right a.button{
+		padding: 9px 7px;
+		font-size: 8px;
+	}
+	#home header div.right a {
+		margin-right: 8px;
+		font-size: 13px;
+	}
+	#spotlight h1.top {
+		font-size: 17px;
+		width: 78%;
+	}
+
+	#spotlight div.container div.img-container div.img1 {
+		width: 100%;
+	}
+	#spotlight div.container div.img-container{
+		flex-wrap:wrap;
+	}
+	#spotlight div.container div.img-container div.img2 {
+		width: 100%;
+	}
+	#spotlight div.container div.img-container div.img3 img {
+		top: 42%;
+		width: 25%;
+	} 
+	#spotlight {
+		margin-top: 20%;
+	}
+}
